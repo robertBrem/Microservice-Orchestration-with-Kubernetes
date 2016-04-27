@@ -41,5 +41,5 @@ Actions
   `kubectl scale rc reservation-v2 --replicas=3`  
 * Update a service  
   `kubectl patch service reservation -p '{"spec":{"selector":{"version":"3.0.0"}}}'`  
-* Rolling update
-  `kubectl rolling-update reservation-v2 -f ctrl/reservation-v3.yml --update-period=1s`
+* Rolling update  
+  `kubectl rolling-update reservation-v2 -f ctrl/reservation-v3.yml --update-period=1s`  
